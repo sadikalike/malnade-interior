@@ -156,7 +156,10 @@ export default function AboutPage() {
                 key={i}
                 className="flex items-start gap-4 bg-white/5 p-6 rounded-2xl hover:bg-white/10 transition"
               >
-                <CheckCircle className="text-secondary shrink-0 mt-1" size={24} />
+                <CheckCircle
+                  className="text-secondary shrink-0 mt-1"
+                  size={24}
+                />
                 <div>
                   <h3 className="font-bold text-lg mb-1">{item.title}</h3>
                   <p className="text-gray-300 text-sm">{item.desc}</p>
