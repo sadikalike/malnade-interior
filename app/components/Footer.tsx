@@ -139,7 +139,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-gray-500 mt-12 pt-6 border-t border-gray-800 max-w-7xl mx-auto px-6">
-        © 2024 Malnad Interiors. All Rights Reserved.
+       © 2024 Malnad Interiors. All Rights Reserved.
       </div>
     </footer>
   );
