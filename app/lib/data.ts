@@ -1,0 +1,255 @@
+export const products = [
+  {
+    id: 1,
+    slug: "upvc-windows",
+    title: "UPVC Windows, Partition & Doors",
+    shortDesc: "Durable UPVC windows with thermal insulation and modern aesthetics.",
+    description:
+      "High-quality UPVC windows, partitions, and doors designed for durability, thermal insulation, and modern aesthetics. Perfect for residential and commercial spaces.",
+    image: "/images/upvc-windows.jpg",
+    category: "Windows & Doors",
+    features: [
+      "2 track, 2.5 track, 3 track sliding windows available",
+      "Profiles: Simta Astrix, Plast One, PSP Indian Profile",
+      "Glass: Saint Gobain, Modi, Assai make",
+      "Glass thickness: 4mm, 5mm available",
+    ],
+  },
+  {
+    id: 2,
+    slug: "aluminium-windows",
+    title: "Regular & Domal Aluminium Windows",
+    shortDesc: "Premium aluminium windows, partitions, and doors.",
+    description:
+      "Premium aluminium windows, partitions, and doors available in both regular and Domal series. Known for strength, corrosion resistance, and sleek finish.",
+    image: "/images/aluminium-windows.jpg",
+    category: "Windows & Doors",
+    features: [
+      "Aluminium extrusions: Jindal & Non-Jindal make",
+      "Aluminium thickness: 1.3mm, 1.5mm, 1.8mm",
+      "Glass: Saint Gobain, Modi, Assai make",
+      "Glass thickness: 3.5mm to 12mm available",
+      "Powder coated and anodized materials",
+      "TPI wheels, Star lock, SS 304 mesh, EPDM gasket",
+    ],
+  },
+  {
+    id: 3,
+    slug: "ms-ss-fabrication",
+    title: "MS & SS Fabrication Works",
+    shortDesc: "Custom gates, grills, roofing sheets, and railings.",
+    description:
+      "Custom fabrication services for main gates, window grills, roofing sheet works, and staircase railings. Built with precision and high-grade materials.",
+    image: "/images/ms-fabrication.jpg",
+    category: "Fabrication",
+    features: [
+      "Main Gate Fabrication",
+      "Window Grills",
+      "Roofing Sheet Works",
+      "Staircase Railings",
+      "MS Structure Works",
+      "Puff Sheets Works",
+    ],
+  },
+  {
+    id: 4,
+    slug: "wooden-aluminium-interior",
+    title: "Wooden & Aluminium Interior Works",
+    shortDesc: "Wardrobes, modular kitchens, TV units, and lift interiors.",
+    description:
+      "Elegant interior solutions including wardrobes, modular kitchens, TV units, and lift cladding. Crafted with premium wood and aluminium finishes.",
+    image: "/images/wooden-works.jpg",
+    category: "Interior",
+    features: [
+      "Plywood Wardrobes",
+      "Modular Kitchen",
+      "Wooden Partition Services",
+      "TV Units",
+      "Lift Interior Works",
+      "Plywood thickness: 6mm, 8mm, 9mm, 12mm, 19mm",
+      "Neem wood, Hardwood, Fine wood, Garjan wood",
+    ],
+  },
+  {
+    id: 5,
+    slug: "toughened-glass",
+    title: "Toughened Glass Works",
+    shortDesc: "Modern glass partitions, canopies, and shower doors.",
+    description:
+      "Modern toughened glass partitions and glass canopies that add elegance and openness to any space. Ideal for offices, showrooms, and homes.",
+    image: "/images/toughened-glass.jpg",
+    category: "Glass Works",
+    features: [
+      "Toughened Glass Partitions",
+      "Glass Canopy",
+      "Shower Doors",
+      "Office Cabins",
+      "Glass: Saint Gobain, Modi, Assai make",
+      "Glass thickness: 8mm, 10mm, 12mm",
+      "Ozone Fittings, Taiton Fittings",
+    ],
+  },
+  {
+    id: 6,
+    slug: "acp-cladding",
+    title: "ACP Cladding & Glazing Works",
+    shortDesc: "Interior and exterior wall cladding with structural glazing.",
+    description:
+      "Interior and exterior wall cladding services using high-quality ACP sheets. Structural glazing for a modern, sleek building façade.",
+    image: "/images/acp-cladding.jpg",
+    category: "Cladding",
+    features: [
+      "Interior and exterior wall cladding services",
+      "Aluminium extrusions: Jindal & Non-Jindal",
+      "Aluminium thickness: 1.3mm, 1.5mm, 1.8mm",
+      "Glass: Saint Gobain, Modi, Assai make",
+      "Glass thickness: 3.5mm, 4mm, 5mm, 6mm",
+      "ACP sheets: Maple, Euro Bond, Indo Bond, Timex Bond",
+      "ACP thickness: 3mm, 4mm",
+    ],
+  },
+  {
+    id: 7,
+    slug: "pop-pvc-works",
+    title: "POP & PVC Works",
+    shortDesc: "Stylish false ceilings and wall partitions.",
+    description:
+      "Stylish false ceilings and wall partitions using POP, PVC, and gypsum boards. Available in plain and designer patterns.",
+    image: "/images/false-ceiling.jpg",
+    category: "Ceiling & Partition",
+    features: [
+      "False Ceiling (Plain & Design)",
+      "Interior Wall Partitions",
+      "Aluminium False Ceiling",
+      "Grid Ceiling",
+      "PVC Wall Panels",
+      "POP Board: Saint Gobain, Gyproc",
+      "Tharmacool, Gypsum board, PVC sheets",
+    ],
+  },
+  {
+    id: 8,
+    slug: "electric-painting",
+    title: "Electric & Painting Works",
+    shortDesc: "Complete electrical and painting solutions.",
+    description:
+      "Complete electrical services and interior/exterior painting solutions to give your space the perfect finishing touch.",
+    image: "/images/painting.jpg",
+    category: "Services",
+    features: [
+      "Electrician Services",
+      "Interior Painting",
+      "Exterior Painting",
+      "Wall Painting Services",
+      "Professional Finish",
+    ],
+  },
+];
+
+export const whyChooseUs = [
+  {
+    title: "Competent Team",
+    desc: "Skilled professionals with years of experience in interior solutions.",
+    icon: "Users",
+  },
+  {
+    title: "Transparent Deals",
+    desc: "Clear pricing with no hidden charges. Honest trade dealings.",
+    icon: "Handshake",
+  },
+  {
+    title: "Customer Satisfaction",
+    desc: "100% focus on client requirements and complete satisfaction.",
+    icon: "Smile",
+  },
+  {
+    title: "Easy Payments",
+    desc: "Flexible and easy payment modes available for all projects.",
+    icon: "CreditCard",
+  },
+  {
+    title: "Timely Delivery",
+    desc: "Projects completed on schedule without compromising quality.",
+    icon: "Clock",
+  },
+  {
+    title: "Premium Quality",
+    desc: "High-grade materials and premium finish in every project.",
+    icon: "Award",
+  },
+];
+
+export const services = [
+  {
+    id: 1,
+    title: "Office Workstations",
+    desc: "Modern office workstations with aluminium and glass partitions.",
+    image: "/images/office-workstations.jpg",
+  },
+  {
+    id: 2,
+    title: "Office Partition",
+    desc: "Elegant office partitions for privacy and style.",
+    image: "/images/aluminium-windows.jpg",
+  },
+  {
+    id: 3,
+    title: "Aluminium Windows",
+    desc: "Durable aluminium windows in various sizes and finishes.",
+    image: "/images/aluminium-windows.jpg",
+  },
+  {
+    id: 4,
+    title: "Toughened Glass Partitions",
+    desc: "Modern glass partitions for offices and showrooms.",
+    image: "/images/toughened-glass.jpg",
+  },
+  {
+    id: 5,
+    title: "Glass Canopy",
+    desc: "Stylish glass canopies for entrances and walkways.",
+    image: "/images/toughened-glass.jpg",
+  },
+  {
+    id: 6,
+    title: "ACP Cladding",
+    desc: "Exterior and interior ACP cladding services.",
+    image: "/images/acp-cladding.jpg",
+  },
+  {
+    id: 7,
+    title: "Aluminium False Ceiling",
+    desc: "Modern false ceiling solutions with LED lighting.",
+    image: "/images/false-ceiling.jpg",
+  },
+  {
+    id: 8,
+    title: "Wooden Works",
+    desc: "Custom wardrobes, modular kitchens, and TV units.",
+    image: "/images/wooden-works.jpg",
+  },
+  {
+    id: 9,
+    title: "MS Fabrication",
+    desc: "Window grills, gates, and MS structure works.",
+    image: "/images/ms-fabrication.jpg",
+  },
+  {
+    id: 10,
+    title: "Railings Works",
+    desc: "SS and glass railings for staircases and balconies.",
+    image: "/images/ms-fabrication.jpg",
+  },
+  {
+    id: 11,
+    title: "Interior Painting",
+    desc: "Professional interior painting services.",
+    image: "/images/painting.jpg",
+  },
+  {
+    id: 12,
+    title: "Electrician Services",
+    desc: "Complete electrical wiring and installation services.",
+    image: "/images/electrician.jpg",
+  },
+];
