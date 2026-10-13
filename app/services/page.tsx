@@ -12,7 +12,6 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <main className="pt-24">
-      {/* Hero */}
       <section className="relative py-24 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -33,7 +32,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
       <section className="py-20 bg-light">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,7 +61,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-heading font-bold text-white mb-4">

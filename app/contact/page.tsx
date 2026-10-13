@@ -37,7 +37,6 @@ export default function ContactPage() {
 
   return (
     <main className="pt-24">
-      {/* Hero */}
       <section className="relative py-24 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -58,7 +57,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Info Cards */}
       <section className="py-16 bg-light">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -69,7 +67,10 @@ export default function ContactPage() {
                 className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition text-center group"
               >
                 <div className="w-14 h-14 bg-primary group-hover:bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 transition">
-                  <info.icon className="text-white group-hover:text-primary transition" size={24} />
+                  <info.icon
+                    className="text-white group-hover:text-primary transition"
+                    size={24}
+                  />
                 </div>
                 <h3 className="font-heading font-bold text-primary mb-1">
                   {info.title}
@@ -81,7 +82,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <div>
