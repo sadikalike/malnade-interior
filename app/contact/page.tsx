@@ -37,13 +37,10 @@ export default function ContactPage() {
 
   return (
     <main className="pt-24">
-      <section className="relative py-24 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/electrician.jpg')" }}
-        >
-          <div className="absolute inset-0 bg-primary/90" />
-        </div>
+      <section className="relative py-24 overflow-hidden bg-primary">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <span className="text-secondary font-semibold tracking-widest uppercase text-sm">
             Get In Touch
@@ -51,7 +48,7 @@ export default function ContactPage() {
           <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mt-3">
             Contact Us
           </h1>
-          <p className="text-white/80 text-lg mt-4 max-w-2xl mx-auto">
+          <p className="text-white/70 text-lg mt-4 max-w-2xl mx-auto">
             We'd love to hear from you. Get a free quote today!
           </p>
         </div>

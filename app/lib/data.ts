@@ -6,7 +6,7 @@ export const products = [
     shortDesc: "Durable UPVC windows with thermal insulation and modern aesthetics.",
     description:
       "High-quality UPVC windows, partitions, and doors designed for durability, thermal insulation, and modern aesthetics. Perfect for residential and commercial spaces.",
-    image: "/images/upvc-windows.jpg",
+    image: "/upvc.png",
     category: "Windows & Doors",
     features: [
       "2 track, 2.5 track, 3 track sliding windows available",
@@ -22,7 +22,7 @@ export const products = [
     shortDesc: "Premium aluminium windows, partitions, and doors.",
     description:
       "Premium aluminium windows, partitions, and doors available in both regular and Domal series. Known for strength, corrosion resistance, and sleek finish.",
-    image: "/images/aluminium-windows.jpg",
+    image: "/regular.png",
     category: "Windows & Doors",
     features: [
       "Aluminium extrusions: Jindal & Non-Jindal make",
@@ -40,7 +40,7 @@ export const products = [
     shortDesc: "Custom gates, grills, roofing sheets, and railings.",
     description:
       "Custom fabrication services for main gates, window grills, roofing sheet works, and staircase railings. Built with precision and high-grade materials.",
-    image: "/images/ms-fabrication.jpg",
+    image: "/msfebrication.png",
     category: "Fabrication",
     features: [
       "Main Gate Fabrication",
@@ -58,7 +58,7 @@ export const products = [
     shortDesc: "Wardrobes, modular kitchens, TV units, and lift interiors.",
     description:
       "Elegant interior solutions including wardrobes, modular kitchens, TV units, and lift cladding. Crafted with premium wood and aluminium finishes.",
-    image: "/images/wooden-works.jpg",
+    image: "/wooden.png",
     category: "Interior",
     features: [
       "Plywood Wardrobes",
@@ -77,7 +77,7 @@ export const products = [
     shortDesc: "Modern glass partitions, canopies, and shower doors.",
     description:
       "Modern toughened glass partitions and glass canopies that add elegance and openness to any space. Ideal for offices, showrooms, and homes.",
-    image: "/images/toughened-glass.jpg",
+    image: "/toughened.png",
     category: "Glass Works",
     features: [
       "Toughened Glass Partitions",
@@ -96,7 +96,7 @@ export const products = [
     shortDesc: "Interior and exterior wall cladding with structural glazing.",
     description:
       "Interior and exterior wall cladding services using high-quality ACP sheets. Structural glazing for a modern, sleek building façade.",
-    image: "/images/acp-cladding.jpg",
+    image: "/acp.png",
     category: "Cladding",
     features: [
       "Interior and exterior wall cladding services",
@@ -115,7 +115,7 @@ export const products = [
     shortDesc: "Stylish false ceilings and wall partitions.",
     description:
       "Stylish false ceilings and wall partitions using POP, PVC, and gypsum boards. Available in plain and designer patterns.",
-    image: "/images/false-ceiling.jpg",
+    image: "/poppvc.png",
     category: "Ceiling & Partition",
     features: [
       "False Ceiling (Plain & Design)",
@@ -134,7 +134,7 @@ export const products = [
     shortDesc: "Complete electrical and painting solutions.",
     description:
       "Complete electrical services and interior/exterior painting solutions to give your space the perfect finishing touch.",
-    image: "/images/painting.jpg",
+    image: "/electric.png",
     category: "Services",
     features: [
       "Electrician Services",
@@ -182,74 +182,50 @@ export const whyChooseUs = [
 export const services = [
   {
     id: 1,
-    title: "Office Workstations",
-    desc: "Modern office workstations with aluminium and glass partitions.",
-    image: "/images/office-workstations.jpg",
+    title: "UPVC Windows",
+    desc: "Durable UPVC windows with thermal insulation.",
+    image: "/upvc.png",
   },
   {
     id: 2,
-    title: "Office Partition",
-    desc: "Elegant office partitions for privacy and style.",
-    image: "/images/aluminium-windows.jpg",
+    title: "Regular Aluminium Windows",
+    desc: "Premium aluminium windows and partitions.",
+    image: "/regular.png",
   },
   {
     id: 3,
-    title: "Aluminium Windows",
-    desc: "Durable aluminium windows in various sizes and finishes.",
-    image: "/images/aluminium-windows.jpg",
+    title: "MS & SS Fabrication",
+    desc: "Custom gates, grills, and staircase railings.",
+    image: "/msfebrication.png",
   },
   {
     id: 4,
-    title: "Toughened Glass Partitions",
-    desc: "Modern glass partitions for offices and showrooms.",
-    image: "/images/toughened-glass.jpg",
+    title: "Wooden Interior Works",
+    desc: "Wardrobes, modular kitchens, and TV units.",
+    image: "/wooden.png",
   },
   {
     id: 5,
-    title: "Glass Canopy",
-    desc: "Stylish glass canopies for entrances and walkways.",
-    image: "/images/toughened-glass.jpg",
+    title: "Toughened Glass Works",
+    desc: "Modern glass partitions and canopies.",
+    image: "/toughened.png",
   },
   {
     id: 6,
     title: "ACP Cladding",
-    desc: "Exterior and interior ACP cladding services.",
-    image: "/images/acp-cladding.jpg",
+    desc: "Interior and exterior wall cladding services.",
+    image: "/acp.png",
   },
   {
     id: 7,
-    title: "Aluminium False Ceiling",
-    desc: "Modern false ceiling solutions with LED lighting.",
-    image: "/images/false-ceiling.jpg",
+    title: "POP & PVC Works",
+    desc: "Stylish false ceilings and wall partitions.",
+    image: "/poppvc.png",
   },
   {
     id: 8,
-    title: "Wooden Works",
-    desc: "Custom wardrobes, modular kitchens, and TV units.",
-    image: "/images/wooden-works.jpg",
-  },
-  {
-    id: 9,
-    title: "MS Fabrication",
-    desc: "Window grills, gates, and MS structure works.",
-    image: "/images/ms-fabrication.jpg",
-  },
-  {
-    id: 10,
-    title: "Railings Works",
-    desc: "SS and glass railings for staircases and balconies.",
-    image: "/images/ms-fabrication.jpg",
-  },
-  {
-    id: 11,
-    title: "Interior Painting",
-    desc: "Professional interior painting services.",
-    image: "/images/painting.jpg",
-  },
-  {
-    id: 12,
-    title: "Electrician Services",
-    desc: "Complete electrical wiring and installation services.",
-    image: "/images/electrician.jpg",
+    title: "Electric & Painting",
+    desc: "Complete electrical and painting solutions.",
+    image: "/electric.png",
   },
 ];

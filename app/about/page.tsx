@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle, Users, Award, Target } from "lucide-react";
 import { whyChooseUs } from "../lib/data";
 
@@ -12,13 +13,10 @@ export default function AboutPage() {
   return (
     <main className="pt-24">
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-        >
-          <div className="absolute inset-0 bg-primary/90" />
-        </div>
+      <section className="relative py-24 overflow-hidden bg-primary">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <span className="text-secondary font-semibold tracking-widest uppercase text-sm">
             Who We Are
@@ -26,7 +24,7 @@ export default function AboutPage() {
           <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mt-3">
             About Malnad Interiors
           </h1>
-          <p className="text-white/80 text-lg mt-4 max-w-2xl mx-auto">
+          <p className="text-white/70 text-lg mt-4 max-w-2xl mx-auto">
             Crafting premium interior solutions since 2016
           </p>
         </div>
@@ -38,7 +36,7 @@ export default function AboutPage() {
           <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/wooden-works.jpg')" }}
+              style={{ backgroundImage: "url('/wooden.png')" }}
             />
           </div>
           <div>
@@ -56,8 +54,7 @@ export default function AboutPage() {
             <p className="text-gray-600 leading-relaxed mb-4">
               Our products are manufactured using high grade and safe raw
               products, which is durable in nature as well as has the premium
-              finish. These are highly demanded and admired amongst the
-              customers for their exquisite designing and high durability.
+              finish.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
               We make use of the finest quality raw material that is well tested
@@ -74,26 +71,86 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mentor Section */}
+      {/* ===== FOUNDER SECTION (With Image) ===== */}
       <section className="py-20 bg-light">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <span className="text-secondary font-semibold tracking-widest uppercase text-sm">
-            Our Mentor
-          </span>
-          <h2 className="text-4xl font-heading font-bold text-primary mt-2 mb-6">
-            Mr. Shivakumar CM
-          </h2>
-          <p className="text-gray-600 leading-relaxed text-lg">
-            Our mentor <span className="font-semibold">Mr. Shivakumar CM</span>{" "}
-            has led the organization to a reputed position in the market with
-            his vision to excel in this field. With our advanced production
-            techniques, we meet the ever increasing needs of clients in this
-            industry.
-          </p>
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="text-secondary font-semibold tracking-widest uppercase text-sm">
+              Our Founder
+            </span>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mt-2">
+              Meet Our Visionary Leader
+            </h2>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div className="grid md:grid-cols-5 gap-0">
+              {/* Founder Image */}
+              <div className="md:col-span-2 relative h-96 md:h-auto bg-gradient-to-br from-primary to-dark">
+                <Image
+                  src="/cmfounder.png"
+                  alt="CM Ramakrishna - Founder"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
+              </div>
+
+              {/* Founder Details */}
+              <div className="md:col-span-3 p-8 md:p-12 flex flex-col justify-center">
+                <span className="inline-block bg-secondary/10 text-secondary px-4 py-1 rounded-full font-semibold tracking-wider uppercase text-xs mb-4 w-fit">
+                  Founder & Mentor
+                </span>
+                <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">
+                  CM Ramakrishna
+                </h3>
+                <div className="w-20 h-1 bg-secondary mb-6" />
+                <p className="text-gray-600 leading-relaxed mb-4 text-lg">
+                  Our founder{" "}
+                  <span className="font-semibold text-primary">
+                    Mr. CM Ramakrishna
+                  </span>{" "}
+                  has led the organization to a reputed position in the market
+                  with his vision to excel in this field.
+                </p>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  With our advanced production techniques, we meet the ever
+                  increasing needs of clients in this industry. His dedication
+                  and commitment to quality has made Malnad Interiors a trusted
+                  name in interior solutions.
+                </p>
+
+                <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
+                  <div>
+                    <div className="text-2xl font-heading font-bold text-secondary">
+                      8+
+                    </div>
+                    <div className="text-xs text-gray-500">Years Leading</div>
+                  </div>
+                  <div className="w-px h-12 bg-gray-200" />
+                  <div>
+                    <div className="text-2xl font-heading font-bold text-secondary">
+                      500+
+                    </div>
+                    <div className="text-xs text-gray-500">Projects</div>
+                  </div>
+                  <div className="w-px h-12 bg-gray-200" />
+                  <div>
+                    <div className="text-2xl font-heading font-bold text-secondary">
+                      100%
+                    </div>
+                    <div className="text-xs text-gray-500">Commitment</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Values */}
+      {/* Values Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
@@ -105,36 +162,44 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Target,
-                title: "Our Mission",
-                desc: "To provide premium quality interior solutions that exceed customer expectations.",
-              },
-              {
-                icon: Award,
-                title: "Our Vision",
-                desc: "To become the most trusted interior solutions provider in Karnataka.",
-              },
-              {
-                icon: Users,
-                title: "Our Team",
-                desc: "Skilled professionals dedicated to delivering excellence in every project.",
-              },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="text-center p-8 bg-light rounded-2xl hover:shadow-xl transition"
-              >
-                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="text-primary" size={32} />
-                </div>
-                <h3 className="text-xl font-heading font-bold text-primary mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600">{item.desc}</p>
+            <div className="text-center p-8 bg-light rounded-2xl hover:shadow-xl transition">
+              <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Target className="text-primary" size={32} />
               </div>
-            ))}
+              <h3 className="text-xl font-heading font-bold text-primary mb-3">
+                Our Mission
+              </h3>
+              <p className="text-gray-600">
+                To provide premium quality interior solutions that exceed
+                customer expectations.
+              </p>
+            </div>
+
+            <div className="text-center p-8 bg-light rounded-2xl hover:shadow-xl transition">
+              <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Award className="text-primary" size={32} />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-primary mb-3">
+                Our Vision
+              </h3>
+              <p className="text-gray-600">
+                To become the most trusted interior solutions provider in
+                Karnataka.
+              </p>
+            </div>
+
+            <div className="text-center p-8 bg-light rounded-2xl hover:shadow-xl transition">
+              <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Users className="text-primary" size={32} />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-primary mb-3">
+                Our Team
+              </h3>
+              <p className="text-gray-600">
+                Skilled professionals dedicated to delivering excellence in
+                every project.
+              </p>
+            </div>
           </div>
         </div>
       </section>
