@@ -104,8 +104,8 @@ export const products = [
   },
   {
     id: 7,
-    slug: "pop-pvc-works",
-    title: "POP & PVC Works",
+    slug: "pop-ceiling-partition",
+    title: "Pop Ceiling & Wall Partition Works", // ✅ Name Changed Here
     shortDesc: "Stylish false ceilings and wall partitions.",
     description:
       "Stylish false ceilings and wall partitions using POP, PVC, and gypsum boards. Available in plain and designer patterns.",
@@ -210,7 +210,7 @@ export const services = [
   },
   {
     id: 7,
-    title: "POP & PVC Works",
+    title: "Pop Ceiling & Wall Partition", // ✅ Name Changed Here
     desc: "Stylish false ceilings and wall partitions.",
     image: "/poppvc.png",
   },
