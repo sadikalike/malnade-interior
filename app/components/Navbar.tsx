@@ -36,17 +36,19 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        {/* ===== LOGO ===== */}
+        {/* ===== LOGO WITH IMAGE ===== */}
         <Link
           href="/"
           className="group flex items-center gap-3"
           aria-label="Malnad Interiors Home"
         >
-          {/* Logo Icon */}
-          <div className="w-11 h-11 md:w-12 md:h-12 bg-secondary rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:shadow-secondary/40 transition-all duration-300">
-            <span className="font-heading font-bold text-primary text-xl md:text-2xl">
-              M
-            </span>
+          {/* Logo Image */}
+          <div className="relative w-11 h-11 md:w-14 md:h-14 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 overflow-hidden p-1">
+            <img
+              src="/logo.png"
+              alt="Malnad Interiors Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
 
           {/* Brand Text */}

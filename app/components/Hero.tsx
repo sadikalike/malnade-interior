@@ -3,29 +3,27 @@ import { ArrowRight, Phone, Sparkles, ShieldCheck } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
-      {/* ===== BACKGROUND IMAGE & OVERLAYS ===== */}
+    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-primary">
+      {/* ===== BACKGROUND OVERLAYS (No Image) ===== */}
+      {/* Dark Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary via-dark to-primary" />
+
+      {/* Premium Dot Pattern */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 animate-fade-in"
-        style={{ backgroundImage: "url('/bgback.png')" }}
-      >
-        {/* Dark Gradient for better text visibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary/85 to-primary" />
-        
-        {/* Premium Dot Pattern */}
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle, #C9A227 1px, transparent 1px)",
-            backgroundSize: "32px 32px",
-          }}
-        />
-      </div>
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, #C9A227 1px, transparent 1px)",
+          backgroundSize: "32px 32px",
+        }}
+      />
+
+      {/* Decorative Top Curved Line */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary to-transparent opacity-50" />
 
       {/* ===== ANIMATED GLOWS ===== */}
-      <div className="absolute top-1/4 -left-20 w-72 h-72 md:w-96 md:h-96 bg-secondary/20 rounded-full blur-[100px] animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-72 h-72 md:w-96 md:h-96 bg-accent/20 rounded-full blur-[100px] animate-pulse" />
+      <div className="absolute top-1/4 -left-20 w-72 h-72 md:w-96 md:h-96 bg-secondary/15 rounded-full blur-[100px] animate-pulse" />
+      <div className="absolute bottom-1/4 -right-20 w-72 h-72 md:w-96 md:h-96 bg-accent/15 rounded-full blur-[100px] animate-pulse" />
 
       {/* ===== MAIN CONTENT ===== */}
       <div className="relative z-10 px-4 sm:px-6 max-w-5xl pt-28 pb-20 md:pt-24 md:pb-0">
@@ -53,7 +51,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        {/* Modern Subtext (Updated with UPVC) */}
+        {/* Modern Subtext */}
         <p className="text-white/80 text-sm sm:text-base md:text-xl max-w-3xl mx-auto mb-8 md:mb-12 leading-relaxed font-light drop-shadow-lg">
           Premium Interior Solutions — <br className="sm:hidden" />
           <span className="inline-flex flex-wrap justify-center gap-x-2 gap-y-1 mt-2 font-medium">
