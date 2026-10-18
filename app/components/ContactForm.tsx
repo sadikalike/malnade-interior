@@ -44,7 +44,7 @@ export default function ContactForm() {
           required
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
-          className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition"
+          className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition bg-white text-gray-800"
         />
         <input
           type="tel"
@@ -52,7 +52,7 @@ export default function ContactForm() {
           required
           value={form.phone}
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
-          className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition"
+          className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition bg-white text-gray-800"
         />
       </div>
 
@@ -61,14 +61,14 @@ export default function ContactForm() {
         placeholder="Email Address"
         value={form.email}
         onChange={(e) => setForm({ ...form, email: e.target.value })}
-        className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition"
+        className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition bg-white text-gray-800"
       />
 
       <select
         required
         value={form.service}
         onChange={(e) => setForm({ ...form, service: e.target.value })}
-        className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition bg-white"
+        className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition bg-white text-gray-800"
       >
         <option value="">Select Service *</option>
         <option>UPVC Windows</option>
@@ -87,7 +87,7 @@ export default function ContactForm() {
         rows={5}
         value={form.message}
         onChange={(e) => setForm({ ...form, message: e.target.value })}
-        className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition resize-none"
+        className="w-full px-5 py-3 rounded-xl border-2 border-gray-200 focus:border-secondary outline-none transition resize-none bg-white text-gray-800"
       />
 
       <button

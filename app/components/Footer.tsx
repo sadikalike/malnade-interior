@@ -1,17 +1,19 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Globe, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-dark text-white pt-16 pb-6">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-        {/* Brand */}
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        {/* ===== BRAND SECTION ===== */}
         <div>
           <h3 className="text-2xl font-heading font-bold mb-4">
             MALNAD <span className="text-secondary">INTERIORS</span>
           </h3>
-          <p className="text-gray-400 leading-relaxed mb-6">
+          <p className="text-gray-400 leading-relaxed mb-6 text-sm">
             Premium interior solutions since 2016. Feel Better, Work Better.
+            Sahakar Nagar.
           </p>
           <div className="flex gap-4">
             <a
@@ -60,12 +62,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Quick Links */}
+        {/* ===== QUICK LINKS ===== */}
         <div>
           <h4 className="text-lg font-semibold mb-5 text-secondary">
             Quick Links
           </h4>
-          <ul className="space-y-3 text-gray-400">
+          <ul className="space-y-3 text-gray-400 text-sm">
             <li>
               <Link href="/" className="hover:text-secondary transition">
                 Home
@@ -94,52 +96,111 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Services */}
+        {/* ===== OUR SERVICES ===== */}
         <div>
           <h4 className="text-lg font-semibold mb-5 text-secondary">
             Our Services
           </h4>
-          <ul className="space-y-3 text-gray-400">
-            <li>UPVC Windows</li>
-            <li>Aluminium Windows</li>
-            <li>MS & SS Fabrication</li>
-            <li>Toughened Glass Works</li>
-            <li>ACP Cladding</li>
-            <li>False Ceiling</li>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> UPVC windows, partition & doors
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> Aluminium windows, partition & doors
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> Domal Aluminium windows
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> MS & SS Fabrications
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> ACP Cladding & Glazing works
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> Toughened glass works
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> Pop ceiling & wall partition works
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> Wooden & Aluminium interior works
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-secondary mt-0.5">›</span> Painting works - exterior & interior
+            </li>
           </ul>
         </div>
 
-        {/* Contact */}
+        {/* ===== CONTACT US ===== */}
         <div>
           <h4 className="text-lg font-semibold mb-5 text-secondary">
             Contact Us
           </h4>
-          <ul className="space-y-4 text-gray-400">
+          <ul className="space-y-4 text-gray-400 text-sm">
             <li className="flex items-start gap-3">
-              <Phone size={18} className="text-secondary mt-1 shrink-0" />
-              <a href="tel:8431454545" className="hover:text-secondary">
-                8431454545
-              </a>
+              <Phone size={18} className="text-secondary mt-0.5 shrink-0" />
+              <div className="flex flex-col">
+                <a href="tel:8431454545" className="hover:text-secondary">
+                  8431454545
+                </a>
+                <a href="tel:9481770267" className="hover:text-secondary">
+                  9481770267
+                </a>
+              </div>
             </li>
             <li className="flex items-start gap-3">
-              <Mail size={18} className="text-secondary mt-1 shrink-0" />
-              <a
-                href="mailto:malnadinteriors.com"
-                className="hover:text-secondary"
-              >
-                malnadinteriors.com
-              </a>
+              <Mail size={18} className="text-secondary mt-0.5 shrink-0" />
+              <div className="flex flex-col break-all">
+                <a href="mailto:info@malnadinteriors.co.in" className="hover:text-secondary">
+                  info@malnadinteriors.co.in
+                </a>
+              </div>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin size={18} className="text-secondary mt-1 shrink-0" />
-              <span>Karnataka, India</span>
+              <Globe size={18} className="text-secondary mt-0.5 shrink-0" />
+              <div className="flex flex-col break-all">
+                <a href="https://www.malnadinteriors.co.in" target="_blank" rel="noreferrer" className="hover:text-secondary">
+                  www.malnadinteriors.co.in
+                </a>
+                <a href="https://www.malnadinteriors.com" target="_blank" rel="noreferrer" className="hover:text-secondary">
+                  www.malnadinteriors.com
+                </a>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <MapPin size={18} className="text-secondary mt-0.5 shrink-0" />
+              <span>Sahakar Nagar, Karnataka, India</span>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="text-center text-gray-500 mt-12 pt-6 border-t border-gray-800 max-w-7xl mx-auto px-6">
-        © 2024 Malnad Interiors. All Rights Reserved.
+      {/* ===== BOTTOM BAR (With Growzy Digital Credits) ===== */}
+      <div className="mt-12 pt-6 border-t border-gray-800 max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+        <p>
+          © 2024 Malnad Interiors. All Rights Reserved.
+        </p>
+        <p className="flex items-center gap-1.5 flex-wrap justify-center">
+          Designed & Developed by{" "}
+          <a
+            href="https://www.instagram.com/growzydigital.web?mdxt=N2k3OGNsMHc3bjFj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary font-semibold hover:text-white transition"
+          >
+            Growzy Digital
+          </a>
+          <span className="text-gray-700 mx-1">|</span>
+          <a
+            href="https://wa.me/917510436350"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary font-semibold hover:text-white transition flex items-center gap-1"
+          >
+            <MessageCircle size={14} /> 7510436350
+          </a>
+        </p>
       </div>
     </footer>
   );

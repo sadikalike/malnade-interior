@@ -1,5 +1,5 @@
 import ContactForm from "../components/ContactForm";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Globe } from "lucide-react";
 
 export const metadata = {
   title: "Contact Us | Malnad Interiors",
@@ -18,19 +18,19 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      value: "malnadinteriors.com",
-      href: "mailto:malnadinteriors.com",
+      value: "info@malnadinteriors.co.in",
+      href: "mailto:info@malnadinteriors.co.in",
+    },
+    {
+      icon: Globe,
+      title: "Website",
+      value: "malnadinteriors.co.in",
+      href: "https://www.malnadinteriors.co.in",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Karnataka, India",
-      href: "#",
-    },
-    {
-      icon: Clock,
-      title: "Working Hours",
-      value: "Mon - Sat: 9AM - 7PM",
+      value: "Sahakar Nagar, Karnataka",
       href: "#",
     },
   ];
@@ -72,7 +72,7 @@ export default function ContactPage() {
                 <h3 className="font-heading font-bold text-primary mb-1">
                   {info.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{info.value}</p>
+                <p className="text-gray-600 text-sm break-words">{info.value}</p>
               </a>
             ))}
           </div>
@@ -101,12 +101,10 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">Call Us</h4>
-                  <a
-                    href="tel:8431454545"
-                    className="text-gray-600 hover:text-secondary transition"
-                  >
-                    8431454545
-                  </a>
+                  <div className="flex flex-col text-gray-600 hover:text-secondary transition">
+                    <a href="tel:8431454545">8431454545</a>
+                    <a href="tel:9481770267">9481770267</a>
+                  </div>
                 </div>
               </div>
 
@@ -117,11 +115,24 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-bold text-primary mb-1">Email Us</h4>
                   <a
-                    href="mailto:malnadinteriors.com"
-                    className="text-gray-600 hover:text-secondary transition"
+                    href="mailto:info@malnadinteriors.co.in"
+                    className="text-gray-600 hover:text-secondary transition break-all"
                   >
-                    malnadinteriors.com
+                    info@malnadinteriors.co.in
                   </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center shrink-0">
+                  <Globe className="text-primary" size={22} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-primary mb-1">Website</h4>
+                  <div className="flex flex-col text-gray-600 hover:text-secondary transition break-all">
+                    <a href="https://www.malnadinteriors.co.in">www.malnadinteriors.co.in</a>
+                    <a href="https://www.malnadinteriors.com">www.malnadinteriors.com</a>
+                  </div>
                 </div>
               </div>
 
@@ -131,7 +142,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">Visit Us</h4>
-                  <p className="text-gray-600">Karnataka, India</p>
+                  <p className="text-gray-600">Sahakar Nagar, Karnataka, India</p>
                 </div>
               </div>
             </div>
