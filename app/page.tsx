@@ -38,13 +38,13 @@ export default function Home() {
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-4">
                 Incepted in 2016, Malnad Interiors is a leading Manufacturer and
-                Service Provider of Office Partition, Aluminum Windows, Doors,
+                Service Provider of Office Partition, UPVC & Aluminium Windows, Doors,
                 False Ceiling Services and more.
               </p>
               <p className="text-gray-600 leading-relaxed text-lg mb-8">
                 Our mentor{" "}
                 <span className="font-semibold text-primary">
-                  Mr. Shivakumar CM
+                  Mr. CM Shivakumar
                 </span>{" "}
                 has led the organization to a reputed position with his vision
                 to excel in this field.
@@ -79,15 +79,16 @@ export default function Home() {
               </Link>
             </div>
 
+            {/* About Section Images */}
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <div
-                  className="h-72 rounded-3xl bg-cover bg-center shadow-2xl"
-                  style={{ backgroundImage: "url('/wooden.png')" }}
+                  className="h-72 rounded-3xl bg-cover bg-center shadow-2xl border-4 border-white"
+                  style={{ backgroundImage: "url('/upvc.png')" }}
                 />
                 <div
-                  className="h-72 rounded-3xl bg-cover bg-center shadow-2xl mt-12"
-                  style={{ backgroundImage: "url('/toughened.png')" }}
+                  className="h-72 rounded-3xl bg-cover bg-center shadow-2xl mt-12 border-4 border-white"
+                  style={{ backgroundImage: "url('/wooden.png')" }}
                 />
               </div>
               <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-secondary text-primary p-5 rounded-2xl shadow-2xl flex items-center gap-3 whitespace-nowrap">
@@ -122,7 +123,7 @@ export default function Home() {
               <div className="md:col-span-2 relative h-96 md:h-auto bg-gradient-to-br from-primary to-dark">
                 <Image
                   src="/cmfounder.png"
-                  alt="CM Ramakrishna - Founder"
+                  alt="CM Shivakumar - Founder"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 768px) 100vw, 40vw"
@@ -136,13 +137,13 @@ export default function Home() {
                   Founder & Mentor
                 </span>
                 <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">
-                  CM Ramakrishna
+                  CM SHIVAKUMAR
                 </h3>
                 <div className="w-20 h-1 bg-secondary mb-6" />
                 <p className="text-gray-600 leading-relaxed mb-4 text-lg">
                   Our founder{" "}
                   <span className="font-semibold text-primary">
-                    Mr. CM Ramakrishna
+                    Mr. CM SHIVAKUMAR
                   </span>{" "}
                   has led the organization to a reputed position with his vision
                   to excel in this field.
@@ -195,6 +196,7 @@ export default function Home() {
             </p>
           </div>
 
+          {/* ಇಲ್ಲಿ ಇಮೇಜ್ ಮತ್ತು ಡೇಟಾ ನೇರವಾಗಿ ಬರುತ್ತದೆ */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
               <ProductCard key={product.id} product={product} />

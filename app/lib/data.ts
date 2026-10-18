@@ -2,8 +2,8 @@ export const products = [
   {
     id: 1,
     slug: "upvc-windows",
-    title: "UPVC Windows, Partition & Doors",
-    shortDesc: "Durable UPVC windows with thermal insulation and modern aesthetics.",
+    title: "UPVC Windows & Doors",
+    shortDesc: "Durable UPVC windows, partitions, and doors.",
     description:
       "High-quality UPVC windows, partitions, and doors designed for durability, thermal insulation, and modern aesthetics. Perfect for residential and commercial spaces.",
     image: "/upvc.png",
@@ -17,11 +17,11 @@ export const products = [
   },
   {
     id: 2,
-    slug: "aluminium-windows",
-    title: "Regular & Domal Aluminium Windows",
-    shortDesc: "Premium aluminium windows, partitions, and doors.",
+    slug: "regular-aluminium",
+    title: "Regular Aluminium Works",
+    shortDesc: "Premium aluminium windows and partitions.",
     description:
-      "Premium aluminium windows, partitions, and doors available in both regular and Domal series. Known for strength, corrosion resistance, and sleek finish.",
+      "Premium aluminium windows, partitions, and doors available in regular series. Known for strength, corrosion resistance, and sleek finish.",
     image: "/regular.png",
     category: "Windows & Doors",
     features: [
@@ -30,14 +30,13 @@ export const products = [
       "Glass: Saint Gobain, Modi, Assai make",
       "Glass thickness: 3.5mm to 12mm available",
       "Powder coated and anodized materials",
-      "TPI wheels, Star lock, SS 304 mesh, EPDM gasket",
     ],
   },
   {
     id: 3,
     slug: "ms-ss-fabrication",
-    title: "MS & SS Fabrication Works",
-    shortDesc: "Custom gates, grills, roofing sheets, and railings.",
+    title: "MS & SS Fabrication",
+    shortDesc: "Custom gates, grills, and railings.",
     description:
       "Custom fabrication services for main gates, window grills, roofing sheet works, and staircase railings. Built with precision and high-grade materials.",
     image: "/msfebrication.png",
@@ -53,11 +52,11 @@ export const products = [
   },
   {
     id: 4,
-    slug: "wooden-aluminium-interior",
-    title: "Wooden & Aluminium Interior Works",
-    shortDesc: "Wardrobes, modular kitchens, TV units, and lift interiors.",
+    slug: "wooden-interior",
+    title: "Wooden Interior Works",
+    shortDesc: "Wardrobes, modular kitchens, TV units.",
     description:
-      "Elegant interior solutions including wardrobes, modular kitchens, TV units, and lift cladding. Crafted with premium wood and aluminium finishes.",
+      "Elegant interior solutions including wardrobes, modular kitchens, TV units, and lift cladding. Crafted with premium wood finishes.",
     image: "/wooden.png",
     category: "Interior",
     features: [
@@ -67,14 +66,13 @@ export const products = [
       "TV Units",
       "Lift Interior Works",
       "Plywood thickness: 6mm, 8mm, 9mm, 12mm, 19mm",
-      "Neem wood, Hardwood, Fine wood, Garjan wood",
     ],
   },
   {
     id: 5,
     slug: "toughened-glass",
     title: "Toughened Glass Works",
-    shortDesc: "Modern glass partitions, canopies, and shower doors.",
+    shortDesc: "Modern glass partitions and canopies.",
     description:
       "Modern toughened glass partitions and glass canopies that add elegance and openness to any space. Ideal for offices, showrooms, and homes.",
     image: "/toughened.png",
@@ -84,7 +82,6 @@ export const products = [
       "Glass Canopy",
       "Shower Doors",
       "Office Cabins",
-      "Glass: Saint Gobain, Modi, Assai make",
       "Glass thickness: 8mm, 10mm, 12mm",
       "Ozone Fittings, Taiton Fittings",
     ],
@@ -92,20 +89,17 @@ export const products = [
   {
     id: 6,
     slug: "acp-cladding",
-    title: "ACP Cladding & Glazing Works",
-    shortDesc: "Interior and exterior wall cladding with structural glazing.",
+    title: "ACP Cladding & Glazing",
+    shortDesc: "Interior and exterior wall cladding.",
     description:
       "Interior and exterior wall cladding services using high-quality ACP sheets. Structural glazing for a modern, sleek building façade.",
     image: "/acp.png",
     category: "Cladding",
     features: [
       "Interior and exterior wall cladding services",
-      "Aluminium extrusions: Jindal & Non-Jindal",
-      "Aluminium thickness: 1.3mm, 1.5mm, 1.8mm",
-      "Glass: Saint Gobain, Modi, Assai make",
-      "Glass thickness: 3.5mm, 4mm, 5mm, 6mm",
-      "ACP sheets: Maple, Euro Bond, Indo Bond, Timex Bond",
+      "ACP sheets: Maple, Euro Bond, Indo Bond",
       "ACP thickness: 3mm, 4mm",
+      "Structural Glazing",
     ],
   },
   {
@@ -123,8 +117,6 @@ export const products = [
       "Aluminium False Ceiling",
       "Grid Ceiling",
       "PVC Wall Panels",
-      "POP Board: Saint Gobain, Gyproc",
-      "Tharmacool, Gypsum board, PVC sheets",
     ],
   },
   {
