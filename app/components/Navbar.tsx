@@ -31,19 +31,19 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-primary/95 backdrop-blur-md shadow-lg py-3"
-          : "bg-primary/90 backdrop-blur-sm py-5"
+          ? "bg-primary/95 backdrop-blur-md shadow-lg py-2"
+          : "bg-primary/90 backdrop-blur-sm py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        {/* ===== LOGO WITH IMAGE ===== */}
+        {/* ===== LOGO WITH IMAGE (TEXT INCREASED) ===== */}
         <Link
           href="/"
-          className="group flex items-center gap-3"
+          className="group flex items-center gap-4"
           aria-label="Malnad Interiors Home"
         >
           {/* Logo Image */}
-          <div className="relative w-11 h-11 md:w-14 md:h-14 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 overflow-hidden p-1">
+          <div className="relative w-12 h-12 md:w-16 md:h-16 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 overflow-hidden p-1.5">
             <img
               src="/logo.png"
               alt="Malnad Interiors Logo"
@@ -52,11 +52,11 @@ export default function Navbar() {
           </div>
 
           {/* Brand Text */}
-          <div className="flex flex-col leading-none">
-            <span className="text-lg md:text-xl font-heading font-bold text-white tracking-wide group-hover:text-secondary transition-colors duration-300">
+          <div className="flex flex-col justify-center">
+            <span className="text-2xl md:text-3xl font-heading font-bold text-white tracking-wide group-hover:text-secondary transition-colors duration-300 leading-none">
               MALNAD
             </span>
-            <span className="text-[10px] md:text-xs font-heading font-semibold text-secondary tracking-[0.3em] mt-0.5">
+            <span className="text-sm md:text-base font-heading font-semibold text-secondary tracking-[0.25em] mt-1.5 leading-none">
               INTERIORS
             </span>
           </div>
