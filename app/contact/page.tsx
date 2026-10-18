@@ -18,8 +18,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      value: "info@malnadinteriors.com",
-      href: "mailto:info@malnadinteriors.com",
+      value: "malnadinteriors.com",
+      href: "mailto:malnadinteriors.com",
     },
     {
       icon: MapPin,
@@ -117,10 +117,10 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-bold text-primary mb-1">Email Us</h4>
                   <a
-                    href="mailto:info@malnadinteriors.com"
+                    href="mailto:malnadinteriors.com"
                     className="text-gray-600 hover:text-secondary transition"
                   >
-                    info@malnadinteriors.com
+                    malnadinteriors.com
                   </a>
                 </div>
               </div>

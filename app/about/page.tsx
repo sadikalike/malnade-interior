@@ -89,7 +89,7 @@ export default function AboutPage() {
               <div className="md:col-span-2 relative h-96 md:h-auto bg-gradient-to-br from-primary to-dark">
                 <Image
                   src="/cmfounder.png"
-                  alt="CM Ramakrishna - Founder"
+                  alt="CM Shivakumar - Founder"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 768px) 100vw, 40vw"
@@ -104,13 +104,13 @@ export default function AboutPage() {
                   Founder & Mentor
                 </span>
                 <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">
-                  CM Ramakrishna
+                  CM SHIVAKUMAR
                 </h3>
                 <div className="w-20 h-1 bg-secondary mb-6" />
                 <p className="text-gray-600 leading-relaxed mb-4 text-lg">
                   Our founder{" "}
                   <span className="font-semibold text-primary">
-                    Mr. CM Ramakrishna
+                    Mr. CM SHIVAKUMAR
                   </span>{" "}
                   has led the organization to a reputed position in the market
                   with his vision to excel in this field.
