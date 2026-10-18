@@ -179,7 +179,7 @@ export default function Footer() {
       {/* ===== BOTTOM BAR (With Growzy Digital Credits) ===== */}
       <div className="mt-12 pt-6 border-t border-gray-800 max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
         <p>
-          © 2024 Malnad Interiors. All Rights Reserved.
+          © 2016 Malnad Interiors. All Rights Reserved.
         </p>
         <p className="flex items-center gap-1.5 flex-wrap justify-center">
           Designed & Developed by{" "}
